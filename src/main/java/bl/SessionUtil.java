@@ -13,8 +13,8 @@ public class SessionUtil {
     private Transaction transaction;
 
     public Session getSession(){return session;}
-
     public Transaction getTransaction(){return transaction;}
+
     public Session openSession(){
         return HibernateUtil.getSessionFactory().openSession();
     }
